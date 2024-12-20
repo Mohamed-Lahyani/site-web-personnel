@@ -1,0 +1,298 @@
+/* Général */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+
+
+/* Main */
+main {
+  text-align: center;
+  padding: 100px;
+  margin: 50px auto;
+  background: linear-gradient(120deg, #1a1a2e, #2c2c54, #343a40);
+  background-size: 300% 300%;
+  animation: gradientBG 12s ease infinite;
+  max-width: 80%;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transition: transform 0.3s;
+  color: #f4f4f9;
+  
+  
+}
+
+main:hover {
+  transform: scale(1.02); /* Zoom subtil au survol */
+}
+
+
+
+main h2 {
+  font-size: 40px;
+  color: #a2b1c0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+main h4 {
+  font-size:24px;
+  color: #a2b1c0;
+  font-style: italic;
+}
+.main-content {
+  background-color: #f8f9fa; 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tab-diplome-competence {
+  background-color: transparent; /* Utilise le même fond que le parent */
+  border: none; /* Supprime les bordures par défaut */
+}
+
+.tab-diplome-competence td {
+  padding: 20px;
+}
+
+h3 {
+  margin-bottom: 15px;
+  color: #a2b1c0; /* Texte légèrement foncé */
+}
+#ima_personnelle {
+  display: block; /* comporte comme un para pour faciliter le center*/
+  margin: 20px auto;
+  width: 250px; 
+  height: 250px; 
+  border-radius: 50%; /* cerculer les bornes de l'img */
+  border: 1px solid #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#ima_personnelle:hover{
+  transform: scale(1.02); 
+
+}
+.img-xtreme{
+  width: 40%;
+  height: auto;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.img-PesTgm{
+  width: 40%;
+  height: auto;
+  margin: 12px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.TSYP{
+  width: 60%;
+  height: auto;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.Attestation{
+  width: 60%;
+  height: auto;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.role{
+  text-align: left;
+}
+.matiere{
+  color: #a2b1c0;
+  font-size: x-large;
+}
+/* Style du formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style des labels */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffffff; 
+}
+
+/* Style des champs de saisie */
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #a59ea1;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  background-color: #f1eff0; 
+}
+
+/* Style pour les champs au survol */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0a0a0a; 
+}
+
+/* Bouton d'envoi */
+input[type="submit"],input[type="button"] {
+  background-color: #fc0f0f7e; 
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #fa4b65; 
+}
+.temoignage{
+  font-size: x-large;
+  text-align: left;
+}
+#tem{
+  color: #f53636;
+}
+.main-quizz{
+    position: relative; /* Nécessaire pour positionner la vidéo à l'intérieur */
+    width: 100%;
+    height: 100%; /* Laisser le main occuper toute la hauteur de la fenêtre */
+    overflow: hidden; /* Empêche les débordements de contenu */
+    color: white;
+    font-size: larger;
+
+}
+.main-quizz:hover{
+  color:white;
+}
+#background-video {
+  position: absolute; /* La vidéo sera placée à l'intérieur du main */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* La vidéo couvre toute la zone sans déformation */
+  z-index: -1; /* La vidéo reste derrière le contenu */
+  pointer-events: none; /* La vidéo ne capture pas les clics */
+}
+/* Footer */
+footer {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 20px 5%;
+  text-align: center;
+}
+
+footer table {
+  width: 100%;
+  margin: 5 auto;
+  table-layout: fixed;
+  border-collapse: collapse; /* Supprime la bordure du tableau */
+}
+
+footer td {
+  vertical-align: top;
+  text-align: center;
+  padding: 15px; /* Ajoute un espacement uniforme */
+  border: none;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+a[class="page"] {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer ul li a {
+  font-size: 20px; /* Augmenté pour rendre les liens plus visibles */
+  color: #ffffff; /* Les liens sont en blanc */
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+footer a img {
+  margin-right: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  width: 50px; /* Taille des icônes */
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Centrer les icônes */
+}
+
+footer  a img:hover {
+  transform: scale(1.5); /* Augmente l'effet au survol */
+}
+
+/* Ajout de l'effet de clic (réduction au clic) */
+footer  a img:active {
+  transform: scale(0.9); /* Réduit l'icône au clic */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  footer table {
+    display: block;
+    width: 100%;
+  }
+
+  footer td {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  footer ul {
+    flex-direction: column; /* Colonne pour les écrans plus petits */
+    align-items: center;
+  }
+
+  footer div a img {
+    width: 40px; /* Réduction des icônes pour mobile */
+  }
+}

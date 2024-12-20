@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu Quizz</title>
+  <link rel="stylesheet" href="../css/quizz.css">
+</head>
+<body>
+  <h1>Le Tour du Monde en Questions</h1>
+        <fieldset>
+            <legend>Le Drapeau de Qui ?</legend>
+            <fieldset>
+                <legend>Question 1</legend> <!--b-->
+                <div class="question1" id="question1" data-correct-answer="b">
+                    <h3>La Roumanie</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q1" value="a"  onclick=" lockOptions('q1');selectReponse('chad')">
+                            <img src="../images/chad.png" alt="chad" class="option-image" id="chad">                            
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q1" value="b" onclick=" lockOptions('q1');selectReponse('roumanie')">
+                            <img src="../images/Roumanie.png" alt="Roumanie" class="option-image" id="roumanie">
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 2</legend> <!--a-->
+                <div class="question2" id="question2" data-correct-answer="a">
+                    <h3>Mali</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q2" value="a" onclick=" lockOptions('q2');selectReponse('mali')">
+                            <img src="../images/Mali.png" alt="Mali" class="option-image" id="mali">                            
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="b" onclick=" lockOptions('q2');selectReponse('senegal')">
+                            <img src="../images/Senegal.png" alt="Senegal" class="option-image" id="senegal">
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 3</legend><!--b-->
+                <div class="question3" id="question3" data-correct-answer="b">
+                    <h3>Monaco</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q3" value="a" onclick=" lockOptions('q3');selectReponse('indonesie')">
+                            <img src="../images/Indonesie.png" alt="Indonesie" class="option-image" id="indonesie">
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" value="b"onclick=" lockOptions('q3');selectReponse('monaco')">
+                            <img src="../images/Monaco.png" alt="Monaco" class="option-image" id="monaco">
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 4</legend> <!--a-->
+                <div class="question4" id="question4" data-correct-answer="a">
+                    <h3>New Zealand</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q4" value="a" onclick=" lockOptions('q4');selectReponse('new-zealand')">
+                            <img src="../images/New Zealand.png" alt="New Zealand" class="option-image" id="new-zealand">                            
+                        </label>
+                        <label>
+                            <input type="radio" name="q4" value="b" onclick=" lockOptions('q4');selectReponse('australie')">
+                            <img src="../images/Australie.png" alt="Australie" class="option-image" id="australie">
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 5</legend> <!--b-->
+                <div class="question5" id="question5" data-correct-answer="b">
+                    <h3>Venezuela</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q5" value="a" onclick=" lockOptions('q5');selectReponse('colombie')">
+                            <img src="../images/Colombie.png" alt="Colombie" class="option-image" id="colombie">                            
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" value="b" onclick="lockOptions('q5');selectReponse('venezuela')">
+                            <img src="../images/Venezuela.png" alt="Venezuela" class="option-image" id="venezuela">
+                        </label>
+                        <label>
+                            <input type="radio" name="q5" value="c" onclick=" lockOptions('q5');selectReponse('equateur')">
+                            <img src="../images/Équateur.png" alt="Equateur" class="option-image" id="equateur">
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 6</legend> <!--a-->
+                <div class="question6" id="question6" data-correct-answer="a">
+                    <h3>Irlande</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q6" value="a" onclick=" lockOptions('q6');selectReponse('irlande')">
+                            <img src="../images/Irlande.png" alt="Irlande" class="option-image" id="irlande">                            
+                        </label>
+                        <label>
+                            <input type="radio" name="q6" value="b" onclick=" lockOptions('q6');selectReponse('cote-ivoire')">
+                            <img src="../images/Côte d'Ivoire.png" alt="Cote d'Ivoire" class="option-image" id="cote-ivoire">
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>La Capitale, S'il Vous Plaît !</legend>
+            <fieldset>
+                <legend>Question 1</legend> <!--c-->
+                <div class="question7" id="question7" data-correct-answer="c">
+                    <h3>Quelle est la capitale de  Canada ?</h3>
+                    <div class="options">
+                        <label class="quiz-options" id="vancouver">
+                            <input type="radio"  name="q7" value="a" onclick="colorButon('vancouver'); lockOptions('q7');selectReponse('vancouver')">
+                            Vancouver
+                        </label>
+                        <label class="quiz-options" id="toronto"> 
+                            <input type="radio" name="q7" value="b" onclick="colorButon('toronto');lockOptions('q7');selectReponse('toronto')">
+                            Toronto
+                        </label>
+                        <label class="quiz-options" id="ottawa"> 
+                            <input type="radio" name="q7" value="c" onclick="colorButon('ottawa'); lockOptions('q7');selectReponse('ottawa')">
+                            Ottawa
+                        </label>
+                        <label class="quiz-options" id="montreal"> 
+                            <input type="radio" name="q7" value="d" onclick="colorButon('montreal'); lockOptions('q7');selectReponse('montreal')">
+                            Montréal
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 2</legend> <!--b-->
+                <div class="question8" id="question8" data-correct-answer="b">
+                    <h3>Quelle est la capitale de l'Italie ?</h3>
+                    <div class="options">
+                        <label class="quiz-options" id="milan">
+                            <input type="radio" name="q8" value="a" onclick="colorButon('milan'); lockOptions('q8');selectReponse('milan')">
+                            Milan
+                        </label>
+                        <label class="quiz-options" id="rome"> 
+                            <input type="radio" name="q8" value="b" onclick="colorButon('rome'); lockOptions('q8');selectReponse('rome')">
+                            Rome
+                        </label>
+                        <label class="quiz-options" id="naples">
+                            <input type="radio" name="q8" value="c" onclick="colorButon('naples'); lockOptions('q8');selectReponse('naples')"> 
+                            Naples 
+                        </label>
+                        <label class="quiz-options" id="florence">
+                            <input type="radio" name="q8" value="d" onclick="colorButon('florence'); lockOptions('q8');selectReponse('florence')">
+                            Florence
+                         </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 3</legend> <!--b-->
+                <div class="question9" id="question9" data-correct-answer="b">
+                    <h3>Quelle est la capitale de l'Australie ?</h3>
+                    <div class="options">
+                        <label class="quiz-options" id="sydney">
+                            <input type="radio" name="q9" value="a" onclick="colorButon('sydney'); lockOptions('q9');selectReponse('sydney')">
+                            Sydney
+                        </label>
+                        <label class="quiz-options" id="canberra">
+                            <input type="radio" name="q9" value="b" onclick="colorButon('canberra');lockOptions('q9');selectReponse('canberra')"> 
+                            Canberra
+                        </label>
+                        <label class="quiz-options" id="melbourne"> 
+                            <input type="radio" name="q9" value="c" onclick="colorButon('melbourne'); lockOptions('q9');selectReponse('melbourne')">
+                            Melbourne 
+                        </label>
+                        <label class="quiz-options" id="brisbane">
+                            <input type="radio" name="q9" value="d" onclick="colorButon('brisbane'); lockOptions('q9');selectReponse('brisbane')">
+                            Brisbane
+                         </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 4</legend> <!--b-->
+                <div class="question10" id="question10" data-correct-answer="b">
+                    <h3>Quelle est la capitale de l'Égypte ?</h3>
+                    <div class="options">
+                        <label class="quiz-options" id="alexandrie">
+                            <input type="radio" name="q10" value="a" onclick=" colorButon('alexandrie');  lockOptions('q10');selectReponse('anlexandrie')">
+                            Alexandrie
+                        </label>
+                        <label class="quiz-options" id="caire"> 
+                            <input type="radio" name="q10" value="b" onclick=" colorButon('caire'); lockOptions('q10');selectReponse('caire')">
+                             Le Caire
+                        </label>
+                        <label class="quiz-options" id="gizeh">
+                            <input type="radio" name="q10" value="c" onclick=" colorButon('gizeh');  lockOptions('q10');selectReponse('gizeh')">
+                             Gizeh 
+                        </label>
+                        <label class="quiz-options" id="louxor">
+                            <input type="radio" name="q10" value="d" onclick=" colorButon('louxor');  lockOptions('q10');selectReponse('louxor')">
+                            Louxor 
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 5</legend> <!--b-->
+                <div class="question11" id="question11" data-correct-answer="b">
+                    <h3>Quelle est la capitale du Brésil ?</h3>
+                    <div class="options">
+                        <label class="quiz-options" id="rio"> 
+                            <input type="radio" name="q11" value="a" onclick=" colorButon('rio');  lockOptions('q11');selectReponse('rio')">
+                            Rio de Janeiro
+                        </label>
+                        <label class="quiz-options" id="brasilia"> 
+                            <input type="radio" name="q11" value="b" onclick=" colorButon('brasilia');  lockOptions('q11');selectReponse('brasilia')">
+                            Brasilia
+                        </label>
+                        <label class="quiz-options" id="paulo">
+                            <input type="radio" name="q11" value="c" onclick=" colorButon('paulo');  lockOptions('q11');selectReponse('paulo')">
+                             São Paulo 
+                        </label>
+                        <label class="quiz-options" id="salvador">
+                            <input type="radio" name="q11" value="d" onclick=" colorButon('salvador'); lockOptions('q11');selectReponse('salvador')">
+                             Salvador 
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 6</legend> <!--c-->
+                <div class="question12" id="question12" data-correct-answer="c">
+                    <h3>Quelle est la capitale de Japon ?</h3>
+                    <div class="options">
+                        <label class="quiz-options" id="osaka">
+                             <input type="radio" name="q12" value="a" onclick="colorButon('osaka'); lockOptions('q12');selectReponse('osaka')">
+                             Osaka
+                        </label>
+                        <label class="quiz-options" id="kyoto">
+                             <input type="radio" name="q12" value="b" onclick="colorButon('kyoto'); lockOptions('q12');selectReponse('kyoto')">
+                             Kyoto
+                        </label>
+                        <label class="quiz-options" id="tokyo">
+                             <input type="radio" name="q12" value="c" onclick="colorButon('tokyo'); lockOptions('q12');selectReponse('tokyo')">
+                             Tokyo  
+                        </label>
+                        <label class="quiz-options" id="nagoya">
+                             <input type="radio" name="q12" value="d" onclick=" colorButon('nagoya'); lockOptions('q12');selectReponse('nagoya')">
+                             Nagoya 
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+        </fieldset>
+        <input type="button" value="decouvrir votre score" onclick="TotalScore()">
+        <script type="text/javascript" src="../js/quizz.js"></script>
+    </body>
+</html>
